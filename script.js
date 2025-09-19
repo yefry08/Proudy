@@ -1,3 +1,4 @@
+
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
     for (let i = 0; i < elem.length; i++) {
@@ -16,40 +17,81 @@ const addEventOnElem = function (elem, type, callback) {
 
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const navLinks = document.querySelectorAll("[data-nav-link]");
 const overlay = document.querySelector("[data-overlay]");
 
-const toggleNavbar = function () {
+addEventOnElem(navTogglers, "click", function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
-}
+});
 
-addEventOnElem(navTogglers, "click", toggleNavbar);
-
-const closeNavbar = function () {
+addEventOnElem(overlay, "click", function () {
   navbar.classList.remove("active");
   overlay.classList.remove("active");
-}
-
-addEventOnElem(navLinks, "click", closeNavbar);
-
-
+});
 
 /**
- * header active when scroll down to 100px
+ * Carousel functionality
  */
+const carousels = document.querySelectorAll(".carousel-container");
 
-const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]");
+carousels.forEach((carousel) => {
+  const track = carousel.querySelector(".carousel-track");
+  const slides = Array.from(track.children);
+  const prevBtn = carousel.querySelector(".carousel-btn.prev");
+  const nextBtn = carousel.querySelector(".carousel-btn.next");
+  const dots = carousel.querySelectorAll(".dot");
+  let currentIndex = 0;
+  let numVisible = 1;
 
-const activeElem = function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
-  }
-}
+  const updateNumVisible = () => {
+    if (slides.length === 0) return;
+    const slideWidth = slides[0].offsetWidth;
+    numVisible = Math.floor(carousel.offsetWidth / slideWidth);
+    const maxIndex = slides.length - numVisible;
+    if (currentIndex > maxIndex) {
+      currentIndex = Math.max(0, maxIndex);
+    }
+    updateCarousel();
+  };
 
-addEventOnElem(window, "scroll", activeElem);
+  const updateCarousel = () => {
+    if (slides.length === 0) return;
+    const slideWidth = slides[0].offsetWidth;
+    const translateX = -currentIndex * slideWidth;
+    track.style.transform = `translateX(${translateX}px)`;
+
+    // Update active dot (first visible slide)
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === currentIndex);
+    });
+
+    // Update button states
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex >= slides.length - numVisible;
+  };
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < slides.length - numVisible) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentIndex = index;
+      updateCarousel();
+    });
+  });
+
+  // Initialize
+  updateNumVisible();
+  window.addEventListener("resize", updateNumVisible);
+});
