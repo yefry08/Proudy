@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Proudy - Llevando la educacion Steam a cada rincon del pais</title>
+  <meta name="title" content="Proudy - El Mejor Programa para Inscribirse en Intercambios">
+  <meta name="description" content="Proudy es la mejor plataforma para inscribirte en programas de intercambio educativo.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/Proudy_logo.png" width="100" height="10" alt="Proudy logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/Proudy_logo.png" width="100" height="10" alt="Proudy logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>Acerca de</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-link>Modelos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#category" class="navbar-link" data-nav-link>STEAM</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#equipo" class="navbar-link" data-nav-link>Equipo</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Contacto</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart" title="Cart">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <a href="#" class="btn has-before">
+          <span class="span">Prueba gratis</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image bg-hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              Llevando la educación <span class="span"> STEAM</span> a cada rincón del país
+            </h1>
+
+            <p class="hero-text">
+            A traves de nuestra plataforma descentralizamos el acceso de educacin de calidad en STEAM de forma gratuita
+             y con motores de IA que serviran como guias durante el proceso de aprendizaje.
+            </p>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Prueba el demo</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one img-holder--hero-one">
+              <img src="./assets/images/hero-banner-1.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two img-holder--hero-two">
+              <img src="./assets/images/hero-banner-2.jpg" width="240" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <img src="./assets/images/LogoEducacion2020.png" width="300" height="190" alt="" class="shape hero-shape-1">
+
+            
+
+          </figure>
+
+        </div>
+      </section>
+       <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" id="category" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">STEAM</p>
+
+          <h2 class="h2 section-title">
+            Sabemos que las <span class="span">STEAM</span> son el presente y el mañana del saber.
+          </h2>
+
+          <p class="section-text">
+            Mantenemos nuestros programas actualizados para estar a la vanguardia educativa a nivel mundial.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card color--4">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">S</a>
+                </h3>
+
+                <p class="card-text">
+                  SCiencie
+                </p>
+
+                <span class="card-badge">Ciencia</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card color--2">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">T</a>
+                </h3>
+
+                <p class="card-text">
+                  Tecnology
+                </p>
+
+                <span class="card-badge">Tecnologia</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card color--3">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">E</a>
+                </h3>
+
+                <p class="card-text">
+                  Engineer
+                </p>
+
+                <span class="card-badge">Ingenieria</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card color--5">
+
+                <div class="card-icon">
+                  <img src="./assets/images/arts.png" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">A</a>
+                </h3>
+
+                <p class="card-text">
+                  Arts
+                </p>
+
+                <span class="card-badge">Artes</span>
+
+              </div>
+            </li>
+
+             <li>
+              <div class="category-card color--1">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">M</a>
+                </h3>
+
+                <p class="card-text">
+                  Math
+                </p>
+
+                <span class="card-badge">Matematicas</span>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+       <!-- 
+        - #ABOUT
+      -->
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <div class="img-holder img-holder--about">
+              <img src="./assets/images/about-banner.jpg" width="520" height="370" loading="lazy" alt="about banner"
+                class="img-cover">
+            </div>
+
+            <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
+              class="shape about-shape-3">
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Acerca de Nosotros</p>
+
+            <h2 class="h2 section-title">
+              Somos una startup <span class="span">comprometida con la equidad </span> para el Desarrollo de Habilidades de toda la nación
+            </h2>
+
+            <p class="section-text">
+              Ofrecemos:
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Recursos de calidad</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Aprendizaje Remoto en Línea</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Acceso de Por Vida</span>
+              </li>
+
+            </ul>
+
+            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+              class="shape about-shape-4">
+
+          </div>
+
+        </div>
+      </section>
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          <p class="section-subtitle">Nuestros Modelos</p>
+
+          <h2 class="h2 section-title">Nos adaptamos a cada una de tus etapas </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder img-holder--course">
+                  <img src="./assets/images/nina.jpg" width="370" height="220" loading="lazy"
+                    alt="Construye Sitios Web Responsivos del Mundo Real con HTML y CSS" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                    
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Sarah</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Para que des tus primeros pasos, te retara siempre a dar lo mejor de ti</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(7-12 años)</p>
+
+                  </div>
+
+                  <data class="price" value="29">$00.00</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 Recursos</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Everyone</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder img-holder--course">
+                  <img src="./assets/images/voiceteam.png" width="370" height="220" loading="lazy"
+                    alt="Clase Maestra de Programación Java para Desarrolladores de Software" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Jean</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Te hará pensar para que por ti mismo resuelvas los proyectos</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(12-18 años)</p>
+
+                  </div>
+
+                  <data class="price" value="49">$00.00</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Recursos</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Everyone</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder img-holder--course">
+                  <img src="./assets/images/intratime-expectativas-empleados.jpeg" width="370" height="220" loading="lazy"
+                    alt="El Curso Completo de Camtasia para Creadores de Contenido" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Nikola</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Analiza tu CV y en base a eso te recomendara recursos y empleos.</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(18 en adelante)</p>
+
+                  </div>
+
+                  <data class="price" value="35">$00.00</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">Recursos infinitos</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">18 +</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Probar ahora</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <section class="video has-bg-image bg-video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card">
+
+            <div class="video-banner img-holder has-after img-holder--video">
+              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
+                class="img-cover">
+
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+              class="shape video-shape-1">
+
+            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+              class="shape video-shape-2">
+
+          </div>
+
+        </div>
+      </section>
+      <!-- 
+        - #STATE
+      -->
+
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="stats-card color--1">
+                <h3 class="card-title">1k</h3>
+
+                <p class="card-text">Estdiantes</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card color--2">
+                <h3 class="card-title">1.4K</h3>
+
+                <p class="card-text">Clases Completadas</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card color--5">
+                <h3 class="card-title">100%</h3>
+
+                <p class="card-text">Radio de Satisfación </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card color--4">
+                <h3 class="card-title">4+</h3>
+
+                <p class="card-text">Instructores</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog has-bg-image bg-blog" id="equipo" aria-label="team">
+        <div class="container">
+
+          <p class="section-subtitle">Equipo</p>
+
+          <h2 class="h2 section-title">Nuestro Equipo</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after img-holder--blog">
+                  <img src="./assets/images/yefrey.jpg" width="370" height="370" loading="lazy"
+                    alt="Foto de Yefry Núñez" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="https://www.linkedin.com/in/yefry-núñez-67a61831a" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/yefry-núñez-67a61831a" class="card-subtitle">CTO</a>
+
+                  <h3 class="h3">
+                    <a href="https://www.linkedin.com/in/yefry-núñez-67a61831a" class="card-title">Yefry Núñez</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <a href="https://www.linkedin.com/in/yefry-núñez-67a61831a" class="social-link" aria-label="LinkedIn">
+                        <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+                      
+                    </li>
+                  </ul>
+
+                  <p class="card-text">
+                    Desarrollador Full Stack y emprendedor con reconocimiento a nivel nacional e internacional
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after img-holder--blog">
+                  <img src="./assets/images/emma.jpg" width="370" height="370" loading="lazy"
+                    alt="Foto de Lic. Emanuel Acosta" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="https://www.linkedin.com/in/emanuel-acosta-593991365" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/emanuel-acosta-593991365" class="card-subtitle">CEO</a>
+
+                  <h3 class="h3">
+                    <a href="https://www.linkedin.com/in/emanuel-acosta-593991365" class="card-title">Lic. Emanuel Acosta</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <a href="https://www.linkedin.com/in/emanuel-acosta-593991365" class="social-link" aria-label="LinkedIn">
+                        <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                      </a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+                     
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                    Experto en Contratación Pública, Liderazgo Ejecutivo, Gestión Estratégica de Negocios y Derecho de los Mercados Financieros
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-after img-holder--blog">
+                  <img src="./assets/images/jose.jpg" width="370" height="370" loading="lazy"
+                    alt="Foto de Ing. José Camacho" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="https://www.linkedin.com/in/josé-camacho" class="card-btn" aria-label="read more">
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/josé-camacho" class="card-subtitle">COO</a>
+
+                  <h3 class="h3">
+                    <a href="https://www.linkedin.com/in/josé-camacho" class="card-title">Ing. José Camacho</a>
+                  </h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <a href="https://www.linkedin.com/in/josé-camacho" class="social-link" aria-label="LinkedIn">
+                        <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                      </a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+    
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                    Ingeniero de software con más de 5 años de experiencia en Machine Learning, chatbots y LLMs.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/blog-shape.png" width="186" height="186" loading="lazy" alt=""
+            class="shape blog-shape">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--
+    - #footer
+  -->
+ 
+<footer class="footer bg-footer" id="footer">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+<br>
+         <div class="button-container">
+  <img src="assets\images\Proudy_logo.png" alt="logo" height="70px" width="120px">
+    
+    <div class="button-text">
+    </div>
+  </button>
+</div>
+
+
+          <p class="footer-brand-text">
+            Disponible en Google Play<br>
+            Modelos open source en Hugging Face
+          </p>
+
+          <div class="wrapper">
+            <span class="span">Dirección:</span>
+
+            <address class="address">Av. las palmas, No. 39, Santo Domingo Oeste.</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Contacto:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+1 849-636-2140</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@eduweb.com" class="footer-link">manueldiaz98@outlook.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <h3 class="footer-list-title">Enlaces</h3>
+          </li>
+
+          <li>
+            <p class="footer-list-title">Suscríbete</p>
+
+            <p class="footer-list-text">
+              Escribe tu email
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Tu @" required class="input-field">
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Enviar</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" aria-label="Facebook">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" aria-label="YouTube">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Derechos reservados <a href="#" class="copyright-link">Desarrollado por Yefry Núñez</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
