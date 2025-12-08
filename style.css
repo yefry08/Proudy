@@ -495,10 +495,9 @@ body {
 
 .category .section-text { margin-block-end: 40px; }
 
-
 .grid-list {
   display: grid;
-  gap: 0;
+  gap: 25px;
   justify-items: center;
 }
 
@@ -506,6 +505,13 @@ body {
   gap: 0;
 }
 
+.category .grid-list {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 0;
+  justify-content: center;
+}
 .category .grid-list {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1000px;
