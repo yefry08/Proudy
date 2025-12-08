@@ -498,12 +498,14 @@ body {
 
 .grid-list {
   display: grid;
-  column-gap: 0; /* Sin espacio entre columnas */
-  row-gap: 25px; /* Mantiene 20px entre filas */
+  gap: 25px;
 }
 
 .category .grid-list {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .category-card,
