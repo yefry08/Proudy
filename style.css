@@ -498,7 +498,7 @@ body {
 
 .grid-list {
   display: grid;
-  gap: 25px;
+  gap: 0;
   justify-items: center;
 }
 
