@@ -499,7 +499,7 @@ body {
 .grid-list {
   display: grid;
   column-gap: 0; /* Sin espacio entre columnas */
-  row-gap: 20px; /* Mantiene 20px entre filas */
+  row-gap: 25px; /* Mantiene 20px entre filas */
 }
 
 .category .grid-list {
@@ -776,10 +776,6 @@ body {
   background-color: var(--black_30);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #STATS
 \*-----------------------------------*/
@@ -802,10 +798,6 @@ body {
   color: var(--eerie-black-1);
   text-transform: uppercase;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #BLOG
@@ -890,10 +882,6 @@ body {
   --ionicon-stroke-width: 40px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -965,11 +953,6 @@ body {
   color: var(--kappel);
   display: inline-block;
 }
-
-
-
-
-
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -994,11 +977,6 @@ body {
   opacity: 1;
   pointer-events: all;
 }
-
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1158,10 +1136,6 @@ body {
   .newsletter-form .btn { min-width: max-content; }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
