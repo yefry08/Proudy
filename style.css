@@ -507,7 +507,7 @@ body {
 }
 
 .category .grid-list {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1000px;
   margin: 0 auto;
   gap: 0;
@@ -520,9 +520,10 @@ body {
 
 
 .category-card {
-  margin: 0; /* Ya lo tienes */
-  margin-inline: 0; /* Asegura que no hay márgenes laterales */
-  padding: 10px 5px;
+  width: 100px;
+  margin: 0;
+  margin-inline: 0; 
+  padding: 10px 10px;
   text-align: center;
   border-radius: var(--radius-5);
 }
